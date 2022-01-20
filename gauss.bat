@@ -1,0 +1,1 @@
+python python\gauss.py gauss.csv && pdflatex -output-directory tex gauss.tex
