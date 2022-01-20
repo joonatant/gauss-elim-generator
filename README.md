@@ -10,4 +10,4 @@ Varmista, että tietokoneellasi on asennettuna [`python>3.9`](https://www.python
 
 ## Käyttö
 
-Muokkaa projektikansion gauss.csv tiedostoa ratkaistavan matriisin muotoiseksi. Rivit erottuvat rivivaihdolla, alkio pilkuilla. Käytä vain reaalilukuja tai murtolukuja /-merkkiä käyttäen.
+Muokkaa projektikansion gauss.csv tiedostoa ratkaistavan matriisin muotoiseksi. Rivit erottuvat rivivaihdolla, alkiot pilkuilla. Käytä vain rationaalilukuja desimaalimuodossa tai murtolukuja /-merkkiä käyttäen.
