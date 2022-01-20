@@ -1,7 +1,7 @@
 import math
 from tuple import *
 from matrix_to_tex import *
-from csv_parser.py import *
+from csv_parser import *
 
 #käytössä oleva versio, joka käyttää tupleja ns. ratinoaalilukuina
 def gauss_elim_tuple(A):
