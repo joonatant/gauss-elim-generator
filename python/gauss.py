@@ -62,7 +62,7 @@ def print_matrix_tuple(A):
     
 #itse main-loop           
 if __name__ == "__main__":
-    """A=[
+    """A=[        #debuggaus sontaa
         [2, 0, 6, 0, 10, 5],
         [2, 0, 6, 8, 0, 5],
         [2, 4, 0, 0, 0, 5],
