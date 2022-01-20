@@ -4,3 +4,4 @@
 *.out
 *.synctex.gz
 *.tex
+python/__pycache__
