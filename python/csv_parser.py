@@ -20,10 +20,6 @@ def csv_to_matrix(fileName="gauss.csv"):
     allowed = "-0123456789/"
     for n in range(0, len(data)):
         for m in range(0, len(data[n])):
-            """print(data[n][m])
-            temp = re.sub("[^0-9\/\-]", '', str(data[n][m]))
-            temp = data[n][m]
-            print(temp)"""
             temp=""
             #print(data[n][m])
             for l in range(0, len(str(data[n][m]))):

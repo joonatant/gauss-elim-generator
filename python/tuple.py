@@ -1,13 +1,6 @@
 import math
 #määritelmät tupplejen laskutoimituksille
 def div(a, b):
-    """
-    n = multiply(a, (b[1], b[0]))
-    k = math.gcd(n[0], n[1])
-    if(k > 1):
-        return (round(n[0]/k), round(n[1]/k))
-    else:
-    """
     return multiply(a, (b[1], b[0]))
 
 def add(a, b):
