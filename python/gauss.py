@@ -2,6 +2,7 @@ import math
 from tuple import *
 from matrix_to_tex import *
 from csv_parser import *
+from inverse_matrix import *
 import sys
 
 #käytössä oleva versio, joka käyttää tupleja ns. ratinoaalilukuina
@@ -62,18 +63,12 @@ def print_matrix_tuple(A):
     
 #itse main-loop           
 if __name__ == "__main__":
-    """A=[        #debuggaus sontaa
-        [2, 0, 6, 0, 10, 5],
-        [2, 0, 6, 8, 0, 5],
-        [2, 4, 0, 0, 0, 5],
-        [1, -1, -1, 0, 0, 0],
-        [0, 0, 1, -1, -1, 0]
-        ]
-    for row in range(0, len(A)):
-        for item in range(0, len(A[row])):
-            A[row][item] = (A[row][item], 1)
-    res = gauss_elim_tuple(A)"""
+
     fileName = sys.argv[1]
     matrix = csv_to_matrix(fileName)
+
+    if(global_inv):
+        matrix = i_matrix(matrix)
+
     full_latex(gauss_elim_tuple(matrix))
 

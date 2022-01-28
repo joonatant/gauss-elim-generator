@@ -1,9 +1,17 @@
 import math
+import sys
+
+global global_inv
+global_inv = len(sys.argv) > 2 and sys.argv[2] == "i"
 
 def matrix_latex_gen(A, num=0):
     rows = len(A)
     rowlen = len(A[0])
-    output = "\\[\n\\left[\n\\begin{array}{" + (rowlen-1)*"c" + "|c}\n"
+    output = ""
+    if(global_inv):
+        output = "\\[\n\\left[\n\\begin{array}{" + (int(rowlen/2))*"c" + "|"+ (int(rowlen/2))*"c"+"}\n"
+    else:
+        output = "\\[\n\\left[\n\\begin{array}{" + (rowlen-1)*"c" + "|c}\n"
     for n in range(0, rows):
         temp = ""
         for m in range(0, rowlen):
@@ -19,7 +27,7 @@ def matrix_latex_gen(A, num=0):
     return output
 
 def full_latex(total, fileName="gauss.tex"):
-    begin = "\\documentclass{article}\n\\usepackage{amsmath}\n\\begin{document}\n"
+    begin = "\\documentclass[12pt]{article}\n\\usepackage{amsmath}\n\\usepackage[margin=1in]{geometry}\n\\begin{document}\n"
     matricies = [matrix_latex_gen(total[i], i+1) for i in range(0, len(total))]
     end = "\\end{document}"
 

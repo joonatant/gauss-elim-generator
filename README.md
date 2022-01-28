@@ -12,4 +12,4 @@ Varmista, että tietokoneellasi on asennettuna [`python>3.9`](https://www.python
 
 Muokkaa projektikansion `gauss.csv` tiedostoa ratkaistavan matriisin muotoiseksi. Rivit erottuvat rivivaihdolla, alkiot pilkuilla. Käytä vain rationaalilukuja desimaalimuodossa tai murtolukuja /-merkkiä käyttäen.
 
-Tämän jälkeen suorita `gauss.bat` tiedosto, minkä jälkeen kansioon ilmestyy gauss.tex-tiedosto sekä pdf kansio, jonne ladottu pdf-tiedosto ilmestyy, mikäli tietokoneella on asennettua latex-ladontajärjestelmä.
+Tämän jälkeen suorita `gauss.bat` tiedosto, minkä jälkeen kansioon ilmestyy gauss.tex-tiedosto sekä tex-kansio, jonne ladottu pdf-tiedosto ilmestyy, mikäli tietokoneella on asennettua latex-ladontajärjestelmä.
